@@ -7,11 +7,10 @@
 
 int main(void)
 {
-printf("Size of char pointer: %d\n", sizeof(char *));
-printf("\nSize of int pointer: %d\n", sizeof(int *));
-printf("\nSize of float pointer: %d\n", sizeof(float *));
-printf("\nSize of long int pointer: %d\n", sizeof(long int *));
-printf("\nSize of double pointer: %d\n", sizeof(double *));
+printf("Size of char pointer: %ld\n", sizeof(char *));
+printf("Size of int pointer: %ld\n", sizeof(int *));
+printf("Size of float pointer: %ld\n", sizeof(float *));
+printf("Size of double pointer: %ld\n", sizeof(double *));
 
 return (0);
 }
