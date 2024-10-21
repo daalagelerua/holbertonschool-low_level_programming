@@ -4,7 +4,7 @@
  * main - Entry point
  * Return: Always 0 (Success)
  */
-gcc -o size32 -m32
+
 int main(void)
 {
 printf("Size of char pointer: %ld\n", sizeof(char *));
