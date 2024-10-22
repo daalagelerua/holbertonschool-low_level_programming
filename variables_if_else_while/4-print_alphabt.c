@@ -13,7 +13,7 @@ for (a = 'a'; a <= 'z'; a++)
 if (a == 'e' || a == 'q')
 continue;
 putchar(a);
-putchar('\n');
 }
+putchar('\n');
 return (0);
 }
