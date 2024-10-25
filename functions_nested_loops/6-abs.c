@@ -3,9 +3,9 @@
 /**
 * _abs - entry
 * @n: integer
-* Return:
+* Return: abs int
 */
 int _abs(int n)
 {
-return (n < 0) ? -n : n;
+return ((n < 0) ? -n : n);
 }
