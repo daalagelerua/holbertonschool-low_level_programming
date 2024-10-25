@@ -9,7 +9,8 @@
 
 void jack_bauer(void)
 {
-int hh, mm;
+int hh = 0;
+int mm = 0;
 
 	for (hh = 0; hh < 24; hh++)
 {
@@ -20,6 +21,7 @@ int hh, mm;
 			_putchar(':');
 			_putchar(mm / 10 + '0');
 			_putchar(mm % 10 + '0');
+			_putchar('\n');
 }
 }
 }
