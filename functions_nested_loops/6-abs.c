@@ -5,9 +5,7 @@
 * @n: integer
 * Return:
 */
-int _abs(int)
+int _abs(int n)
 {
-int n;
-
 return (n < 0) ? -n : n;
 }
