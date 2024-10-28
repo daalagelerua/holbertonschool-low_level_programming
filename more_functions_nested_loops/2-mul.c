@@ -5,11 +5,10 @@
 * mul - entry
 * @a: para1
 * @b: para2
-* Return: 0
+* Return: multi
 */
 
 int mul(int a, int b)
 {
-_putchar(a * b);
-return (0);
+return (a * b);
 }
