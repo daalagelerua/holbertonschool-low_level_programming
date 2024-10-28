@@ -14,6 +14,6 @@ int m;
 for (m = 0; m < n; m++)
 _putchar('_');
 _putchar('\n');
-else if (n <= 0)
+if (n <= 0)
 _putchar('\n');
 }
