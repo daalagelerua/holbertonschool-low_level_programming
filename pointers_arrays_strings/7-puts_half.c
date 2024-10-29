@@ -15,6 +15,6 @@ while (str[len] != '\0')
 len++;
 s = (len % 2 == 0) ? len / 2 : (len / 2) + 1;
 for (i = s; str[i] != '\0'; i++)
-_putchar(str[i];
+_putchar(str[i]);
 _putchar('\n');
 }
