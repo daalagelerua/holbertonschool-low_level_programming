@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* rest_to_98 - entry
+* reset_to_98 - entry
 * @n: ptr
 * description: update value
 */
