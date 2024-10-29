@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+* _puts - entry
+* @str: ptr str
+* description: print a string
+*/
+
+void _puts(char *str)
+{
+
+
