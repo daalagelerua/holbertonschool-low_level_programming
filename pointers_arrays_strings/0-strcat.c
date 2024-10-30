@@ -5,6 +5,7 @@
 **_strcat - entry
 * @dest: destination string
 * @src: string that will be append at the end of dest
+* Return: full destination
 */
 
 char *_strcat(char *dest, char *src)
