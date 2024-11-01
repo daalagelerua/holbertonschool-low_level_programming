@@ -9,19 +9,26 @@
 
 char *leet(char *str)
 {
-char leet_chars[] = "43071";
-char normal_chars[] = "aeotlAEOTL";
-int i, j;
+char leet_map[128] = {0};
+int i;
+leet_map['a'] = '4';
+leet_map['A'] = '4';
+leet_map['e'] = '3';
+leet_map['E'] = '3';
+leet_map['o'] = '0';
+leet_map['O'] = '0';
+leet_map['t'] = '7';
+leet_map['T'] = '7';
+leet_map['l'] = '1';
+leet_map['L'] = '1';
+leet_map['s'] = '5';
+leet_map['S'] = '5';
 
-	for (i = 0; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-	for (j = 0; j < 10; j++)
+if (leet_map[(int)str[i]] != 0)
 {
-	if (str[i] == normal_chars[j])
-{
-		str[i] = leet_chars[j / 2];
-	break;
-}
+str[i] = leet_map[(int)str[i]];
 }
 }
 return (str);
