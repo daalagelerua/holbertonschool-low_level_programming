@@ -21,8 +21,6 @@ leet_map['t'] = '7';
 leet_map['T'] = '7';
 leet_map['l'] = '1';
 leet_map['L'] = '1';
-leet_map['s'] = '5';
-leet_map['S'] = '5';
 
 for (i = 0; str[i] != '\0'; i++)
 {
