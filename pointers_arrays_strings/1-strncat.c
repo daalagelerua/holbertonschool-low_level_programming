@@ -6,6 +6,7 @@
 * @dest: at the end of which src will be appended
 * @src: will be moved to the end of dest
 * @n: make sure src will be at most n bytes
+* Return: dest
 */
 
 char *_strncat(char *dest, char *src, int n)
