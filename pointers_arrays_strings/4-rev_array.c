@@ -20,7 +20,7 @@ while (start < end)
 tmp = *start;
 *start = *end;
 *end = tmp;
-}
 start++;
 end++;
+}
 }
