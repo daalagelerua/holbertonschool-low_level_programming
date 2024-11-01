@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* *_strncat - entry
+* _strncat - entry
 * @dest: at the end of which src will be appended
 * @src: will be moved to the end of dest
 * @n: make sure src will be at most n bytes
