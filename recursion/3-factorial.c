@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
-*
-*
-*
+* factorial - return n!
+* @n: given number
+* Return: result
 *
 */
 
