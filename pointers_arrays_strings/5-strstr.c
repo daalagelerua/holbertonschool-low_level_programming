@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+* _strstr - locate a substring
+* @haystack: string
+* @needle: substring
+* Return: located substring
+*/
+
 char *_strstr(char *haystack, char *needle)
 {
-if (*needle =='\0')
+if (*needle == '\0')
 	return (haystack);
 
 while (*haystack)
@@ -17,7 +24,7 @@ while (*haystack)
 		n++;
 		}
 	if (*n == '\0')
-		return haystack;
+		return (haystack);
 	haystack++;
 	}
 return ('\0');
