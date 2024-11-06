@@ -3,12 +3,10 @@
 
 /**
 * _sqrt_recursion - return the natural sqrt
-* @n: number to find sqrt from
-*
 * _sqrt_helper - helper to find sqrt recursively
-* @guess: current guess of sqrt
-*
+* @n: number to find sqrt from
 * Return: natural sqrt of n or -1 if no sqrt
+* @guess: current guess of sqrt
 */
 
 int _sqrt_helper(int n, int guess);
@@ -22,6 +20,12 @@ return (_sqrt_helper(n, 0));
 /* 0 is the initial guessfor the sqrt*/
 }
 
+/**
+* _sqrt_helper - helper to find sqrt recursively
+* @n: number to find sqrt from
+* Return: nat sqrt of n or -1 no sqrt
+* @guess: current guess of sqrt
+*/
 int _sqrt_helper(int n, int guess)
 {
 if (guess * guess > n)
@@ -30,6 +34,6 @@ if (guess * guess > n)
 if (guess * guess == n)
 	return (guess);
 /* that guess is the natural sqrt */
-return _sqrt_helper(n, guess + 1);
+return (_sqrt_helper(n, guess + 1));
 /* try the next number */
 }
