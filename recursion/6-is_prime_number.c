@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+int prime_helper(int n, int div);
+
 /**
 * is_prime_number - identifie a prime number
 * @n: number to check
@@ -9,15 +11,26 @@
 
 int is_prime_number(int n)
 {
-int i;
-
 if (n <= 1)
 	return (0);
 
-for (i = 2; i * i <= n; i++)
-	{
-	if (n % i == 0)
-		return (0);
-	}
-return (1);
+return (prime_helper(n, 2));
+}
+
+/**
+* prime_helper - helper function
+* @n: number to check
+* @div: divisor to check
+* Return: same
+*/
+
+int prime_helper(int n, int div)
+{
+if (div * div > n)
+	return (1);
+
+if (n % div == 0)
+	return (0);
+
+return (prime_helper(n, div + 1));
 }
