@@ -30,7 +30,9 @@ for (i = 0; i < height; i++)
 		if (grid[i] == NULL)
 		{
 		for (j = 0; j < i; j++)
+			{
 			free(grid[j]);
+			}
 			free(grid);
 			return (NULL);
 			}
