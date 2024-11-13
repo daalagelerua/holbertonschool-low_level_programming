@@ -18,7 +18,7 @@ if (str == NULL)
 	return (NULL);
 
 for (i = 0; str[i] != '\0'; i++)
-
+;
 array = malloc(sizeof(*array) * (i + 1));
 
 if (array == NULL)
