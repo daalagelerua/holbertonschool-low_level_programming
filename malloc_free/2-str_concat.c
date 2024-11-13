@@ -20,9 +20,11 @@ if (s1 == NULL)
 if (s2 == NULL)
 	s2 = "";
 
-for (len_i = 0; s1[len_i] != '\0'; len_i++)
+while (s1[len_i] != '\0')
+	len_i++;
 
-for (len_j = 0; s2[len_j] != '\0'; len_j++)
+while (s2[len_j] != '\0')
+	len_j++;
 
 array = malloc(sizeof(char) * (len_i + len_j + 1));
 if (array == NULL)
