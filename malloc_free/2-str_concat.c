@@ -24,7 +24,7 @@ for (len_i = 0; s1[len_i] != '\0'; len_i++)
 
 for (len_j = 0; s2[len_j] != '\0'; len_j++)
 
-array = malloc(sizeof(*array) * (len_i + len_j + 1));
+array = malloc(sizeof(char) * (len_i + len_j + 1));
 if (array == NULL)
 	return (NULL);
 
@@ -32,9 +32,9 @@ for (i = 0; i < len_i; i++)
 	array[i] = s1[i];
 
 for (j = 0; j < len_j; j++)
-	array[i + j] = s2[j];
+	array[len_i + j] = s2[j];
 
-array[i + j] = '\0';
+array[len_i + len_j] = '\0';
 
 return (array);
 }
