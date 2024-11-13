@@ -20,7 +20,7 @@ if (min > max)
 
 i = max - min + 1;
 
-array = malloc(sizeof(* array) * i);
+array = malloc(sizeof(*array) * i);
 if (array == NULL)
 	return (NULL);
 
