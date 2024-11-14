@@ -55,8 +55,10 @@ dog = malloc(sizeof(dog_t));
 
 dog->name = _strdup(name);
 	if (dog->name == NULL)
+		{
 		free(dog);
-
+		return (NULL);
+		}
 dog->age = age;
 
 dog->owner = _strdup(owner);
