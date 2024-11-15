@@ -11,20 +11,30 @@
 
 char *_strdup(char *str)
 {
-char *cp_str;
 int i;
-int len;
+char *array;
+char *start;
+
 if (str == NULL)
-return (NULL);
-for (len = 0; str[len] != '\0'; len++)
+	return (NULL);
+
+for (i = 0; str[i] != '\0'; i++)
 ;
-cp_str = malloc((len + 1) * sizeof(char));
-if (cp_str == NULL)
-return (NULL);
-for (i = 0; i < len; i++)
-cp_str[i] = str[i];
-cp_str[len] = '\0';
-return (cp_str);
+array = malloc(sizeof(*array) * (i + 1));
+
+if (array == NULL)
+	return (NULL);
+
+start = array;
+
+while (*str)
+{
+*array = *str;
+array++;
+str++;
+}
+*array = '\0';
+return (start);
 }
 
 /**
@@ -60,4 +70,3 @@ dog->owner = _strdup(owner);
 		}
 return (dog);
 }
-
