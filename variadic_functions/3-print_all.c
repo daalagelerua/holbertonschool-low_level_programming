@@ -28,9 +28,17 @@ printf("%f", va_arg(arg, float);
 * pr_str - print a string
 * @arg: pointer to va_list
 */
-void pr_str(va_list)
+void pr_str(va_list arg)
 {
-printf("%s", va_arg(arg, char *);
+char * str;
+
+str = va_arg(arg, char *);
+if (str == NULL)
+{
+printf("(nil)");
+return;
+}
+printf("%s", str);
 }
 /**
 * print_all - prints anything
