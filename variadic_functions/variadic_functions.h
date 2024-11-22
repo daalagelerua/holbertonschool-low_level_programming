@@ -6,7 +6,7 @@
 typedef struct
 {
 	char * spec;
-	void (*print_func)(va_list);
+	void (*f)(va_list);
 }print_t;
 
 int sum_them_all(const unsigned int n, ...);

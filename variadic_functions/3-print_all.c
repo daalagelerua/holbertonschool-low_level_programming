@@ -63,22 +63,21 @@ char *separator = "";
 
 va_start(arg, format);
 
-while (format && (*(format + i)))
+while (format && format[i])
 {
-	j = 0;
-	while (j < 4 && (*(format + i) != *(print_func[j].spec)))
-		j++;
-	if (j < 4)
+	while (print_func[j].spec)
+	{
+	if (*print_func[j].spec == format[i])
 	{
 		printf("%s", separator);
-		print_func[j].
+		print_func[j].f(arg);
+		separator = ", ";
 	}
 	j++;
 	}
-	if (found && format[i + 1] != '\0' && separator != NULL)
-	printf("%s", separator);
+	j = 0;
 	i++;
 }
-va_end(arg);
 printf("\n");
+va_end(arg);
 }
