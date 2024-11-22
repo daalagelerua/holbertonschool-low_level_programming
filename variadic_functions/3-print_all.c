@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <stdbool.h>
+
 /**
 * pr_char - print letter
 * @arg: pointer to va_list
