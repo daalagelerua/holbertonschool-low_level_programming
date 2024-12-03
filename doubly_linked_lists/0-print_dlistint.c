@@ -10,10 +10,10 @@ size_t print_dlistint(const dlistint_t *h)
 {
 size_t count = 0; /*node counter*/
 
-while (h != NULL)
+while (h != NULL) /*parcourir la liste de noeud*/
 	{
-	printf("%d\n", h->n);
-	h = h->next;
+	printf("%d\n", h->n); /*print valeur du noeud actuel*/
+	h = h->next; /*passer au noeud suivant*/
 	count++;
 	}
 return (count);
