@@ -29,4 +29,3 @@ int main(void)
     head = NULL;
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked list
