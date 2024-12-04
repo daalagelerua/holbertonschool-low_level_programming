@@ -2,7 +2,7 @@
 
 /**
 * sum_dlistint - returns the sum of all the data 'n' from the list
-* @head:
+* @head: pointer to first node
 * Return: sum of data 'n' or 0 if empty
 */
 
