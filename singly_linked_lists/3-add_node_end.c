@@ -11,6 +11,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new; /*nouveau noeud*/
 list_t *temp; /*pointeur temporaire pour parcourir la liste*/
+size_t len = 0;
 
 if (head == NULL || str == NULL) /*verifier si la liste est vide*/
 	return (NULL);
@@ -19,8 +20,11 @@ new = malloc(sizeof(list_t)); /*allouer memoire pour nouveau noeud*/
 	if (new == NULL)
 		return (NULL);
 
+while (str[len] != '\0')
+	len++;
+new->len = len;
+
 new->str = strdup(str); /*copie la chaine*/
-new->len = strlen(str); /*calcul sa longueur*/
 new->next = NULL; /*le nouveau noeud sera le dernier*/
 
 if (*head == NULL) /*si la liste est vide le nouveau noeud devient la tete*/
