@@ -8,8 +8,8 @@
 // -> single line comments
 
 /**
-* text                            
-* text
+/* text                            
+/* text
 */  
 
  
