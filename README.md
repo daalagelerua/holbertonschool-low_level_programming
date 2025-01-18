@@ -5,11 +5,11 @@
 ### comments :
 (comments will be ignored by the compiler)
 
-// -> single line comments
-/* single line comments v2 */
-/**
-* multiline                           
-* comments
-*/  
+- // -> single line comments
+- /* single line comments v2 */
+- /**
+  * multiline                           
+  * comments
+  */  
 
  
