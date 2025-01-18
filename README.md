@@ -6,10 +6,10 @@
 (comments will be ignored by the compiler)
 
 // -> single line comments
-
+/* single line comments v2 */
 /**
-/* text                            
-/* text
+* multiline                           
+* comments
 */  
 
  
