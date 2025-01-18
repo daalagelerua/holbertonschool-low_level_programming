@@ -8,8 +8,8 @@
 - // -> single line comments
 - /* single line comments v2 */
 - /**
-- * multiline                           
-- * comments
+- \* multiline                           
+- \* comments
 - */  
 
  
