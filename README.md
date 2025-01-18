@@ -41,14 +41,14 @@ It is a placeholder for the variable value it starts with a % followed by a char
 
 
 with float you define how many digit should be shown after the decimal point 
-	printf("%.1f) -> 3.5
-	printf("%.2f) -> 3.55
- 	printf("%.4f) -> 3.5555
+	- printf("%.1f) -> 3.5
+	- printf("%.2f) -> 3.55
+ 	- printf("%.4f) -> 3.5555
 
 to make a variable unchangeable use the const keyword
-	const int myNum = 15;
+	- const int myNum = 15;
 a good practice is to write/declare the name of the constant in uppercase
-	const int MYNUM = 15;
+	- const int MYNUM = 15;
 
 - ++ increase the value of a variable by 1
 - -- decrease the value of a variable by 1
