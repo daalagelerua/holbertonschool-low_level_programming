@@ -1,13 +1,17 @@
 #include <stdio.h>
 /**
-* main - entry
+* main - print numbers from 0 to 9
 * Return: 0
 */
 int main(void)
 {
 int i;
-for (i = 0; i <= 9; i++)
-putchar(i + '0');
-putchar('\n');
+
+    for (i = 0; i <= 9; i++) /* iterate through each number */
+        putchar(i + '0'); /* putchar only takes character as argument */
+        /* adding '0' shift the number to its ascii value */
+
+    putchar('\n');
+
 return (0);
 }
