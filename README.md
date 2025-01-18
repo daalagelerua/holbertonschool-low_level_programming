@@ -48,6 +48,7 @@ With float you define how many digit should be shown after the decimal point
 To make a variable unchangeable use the const keyword
 - const int myNum = 15;
 
+### iteration :
 - ++ increase the value of a variable by 1
 - -- decrease the value of a variable by 1
 - += adds value to a variable {+=5 -> +5 to variable}
