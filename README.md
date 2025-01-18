@@ -1,3 +1,15 @@
 # holbertonschool-low_level_programming
-week 6
-project 0
+
+## This project is about learning the basics of C programming
+
+### comments :
+(comments will be ignored by the compiler)
+
+// -> single line comments
+
+/**
+* text                            
+* text
+*/  
+
+ 
